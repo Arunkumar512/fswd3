@@ -1,2 +1,7 @@
-var firstName="john",LastName="doe",age=35;
-console.log(firstName);
+function abc(){
+x="hello";
+document.getElementById("demo").innerHTML=x
+
+}
+
+console.log[abc()];
