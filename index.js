@@ -1,8 +1,17 @@
-const response = fetch('https://jsonplaceholder.typicode.com/posts')
+let value = 15
 
-console.log(response)
+const myFirstPromise = new Promise((resolve) => {
+    setTimeout(() => {
+        if (value > 10) resolve([{ id: 1, data: "this is data" }])
+    }, 5000)
+})
+
+console.log(myFirstPromise)
 
 setTimeout(() => {
-    console.log(response)
-}, 500)
+    console.log(myFirstPromise)
+}, 3999)
 
+myFirstPromise.then(val => {
+    console.log(val)
+})
