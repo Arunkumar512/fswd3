@@ -1,6 +1,8 @@
-console.log(1)
+const response = fetch('https://jsonplaceholder.typicode.com/posts')
+
+console.log(response)
 
 setTimeout(() => {
-    console.log("asd")
-}, 0);
-console.log(5);
+    console.log(response)
+}, 500)
+
