@@ -77,20 +77,16 @@ const getData = async () => {
   //     .then(data => {
   //         console.log(data)
   //     })
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
 
-  const response = await fetch("https://jsonplaceholder.typicode.com/todos");
-
-  const data = await response.json();
-  console.log(data);
-
-  console.log(2);
-  console.log('12')
-  console.log('something')
-  console.log('and something')
-
-
-
-
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    console.log("i will execute ");
+  }
 };
 
 getData();
