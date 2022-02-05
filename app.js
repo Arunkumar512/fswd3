@@ -2,7 +2,14 @@
 // ReactDOM.render(
 // ele,
 // document.getElementById('root'))
-const ele = document.createElement('h1') 
-ele.innerText = "hello listen"
-document.getElementById('root').appendChild(ele) 
+// const ele = document.createElement('h1') 
+// ele.innerText = "hello listen"
+// document.getElementById('root').appendChild(ele) 
+// console.log(ele)
+
+
+
+const ele =document.createElement("h1")
+ele.innerText="asdsffds"
+document.getElementById("root").appendChild(ele)
 console.log(ele)
